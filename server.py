@@ -17,8 +17,9 @@ class BlogPost(db.Model):
         return 'Blog post '+ str(self.id)
 
 @app.route('/')
+@app.route('/index')
 def index():
-    return render_template('index.html')
+    return flask.render_template('index.html')
 
 
 @app.route('/posts',methods = ['GET', 'POST'])
