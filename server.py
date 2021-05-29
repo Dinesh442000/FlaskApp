@@ -1,6 +1,7 @@
-from flask import Flask,flask, render_template,request,redirect
+from flask import Flask, render_template,request,redirect
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
+import flask
 app = Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///posts.db'
